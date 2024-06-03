@@ -317,7 +317,7 @@ body{
   justify-content: space-between;
   border-bottom:1px solid grey;
   /* padding-bottom:0.6%; */
-  margin-right: 7%;
+  margin-right: 4%;
 }
 .bike{
   padding-right: 2%;
@@ -329,6 +329,13 @@ body{
   margin-right:5%;
   border-bottom: 1px solid grey;
   padding-bottom: 0.6%;
+  width:10vw;
+}
+.renting-days img{
+  width:10%;
+  position: relative;
+  right: -10px;
+  top:2px; 
 }
 
 .vehicleDetailsSection{
