@@ -1,0 +1,476 @@
+body{
+  padding:0;
+  margin:0;
+}
+.countdown{
+  height:4vh;
+  width: 100%;
+  background-color: rgb(26, 22, 41);
+  color:white;
+  font-family: sans-serif;
+  font-size:0.9rem;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.contact{
+  margin-left: 18%;
+  display: flex;
+  margin-right: 2%;
+}
+.contact div:nth-child(2n){
+  /* border:1px solid white; */
+  position: relative;
+  top:2px;
+}
+/* ----------NavBar-------------- */
+.nav{
+  height:10vh;
+  width:100vw;
+  /* border:1px solid red; */
+  display: flex;
+  justify-content: left;
+}
+.icon{
+  width:18vw;
+  height: inherit;
+  text-align: center;
+  display: flex;
+  justify-content: right;
+}
+.icon div{
+  width: 80%;
+  /* border:1px solid black; */
+  height: inherit;
+}
+.icon img{
+  width: 100%;
+  height: 100%;
+}
+.navbar{
+  width:60vw;
+  display:flex;
+  justify-content: space-around;
+  padding-top: 1.4%;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+}
+.signin{
+  width:18vw;
+  /* border:1px solid black; */
+  text-align: right;
+  padding-top:1%;
+}
+.signin button{
+  border-radius: 15px;
+  font-size: 1.2rem;
+  padding-left:7%;
+  padding-bottom: 2%;
+  padding-right: 7%;
+  padding-top:2%;
+  background-color: cyan;
+  letter-spacing: 2px;
+  outline: none;
+  border:none;
+}
+
+/* --------------Main Header---------------------- */
+.header{
+  position: relative;
+}
+.social{
+  position: absolute;
+  right:0px;
+  top:30%;
+}
+.header-left{
+  background-image: linear-gradient(to right,rgb(239, 248, 248) 40%,white);
+}
+.header-left{
+  width:49vw;
+  height:65vh;
+  /* border:1px solid black; */
+  display: inline-block;
+  padding-left:5%;
+  padding-top:5%;
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+.header-left div:first-child{
+  font-size:0.9rem;
+  font-weight: 600;
+  padding-bottom: 3%;
+}
+.city-name{
+  font-size:3rem;
+  font-weight: 700;
+  font-family: monospace;
+  letter-spacing: 0;
+}
+.city-detail{
+  width:50%;
+  padding-top:3%;
+  font-size: 1rem;
+}
+.city-search{
+  display: flex;
+  justify-content: left; 
+  padding-top:5%;
+}
+.locateMe{
+  width: 20%;
+  /* display: inline-block; */
+  text-align: right;
+  font-size:0.9rem;
+  padding:1% !important;
+  padding-right:3%;
+  padding-top: 1.4% !important;
+  /* border:1px solid black; */
+  height: inherit;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: white;
+  box-shadow: 0 0 2px 0px grey;
+  border-right: none;
+  box-sizing: border-box;
+  /* height: 3.5vh; */
+}
+.searchBar{
+  width: 50%;
+  /* display: inline-block; */
+}
+.searchBar input{
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-size:0.85rem;
+  padding:2%;
+  outline:none;
+  border:none;
+  box-shadow: 0 0 2px 0px grey;
+  border-left: none;
+  height: 3.5vh;
+}
+.header-right{
+  width:48vw;
+  height:65vh;
+  /* border:1px solid red; */
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding:1%;
+  position: relative;
+}
+
+.picture-first{
+  /* border:1px solid black; */
+  /* padding-right:10%; */
+  width:80%;
+  height:40%;
+  display: flex;
+  justify-content: center;
+  border-radius: 0px;
+}
+.picture-first div:first-child {
+  overflow: hidden;
+}
+.picture-first div{
+  width:41%;
+}
+.picture-first div img{
+  width:100%;
+}
+.picture-first div:last-child{
+  position: relative;
+  left:6px;
+  margin-bottom: 1%;
+}
+.greet{
+  /* border:1px solid red; */
+  position: absolute;
+  top:10%;
+  right:27%;
+  /* left:0px; */
+  width:fit-content;
+}
+.greet input{
+  background-color: white;
+  border-radius: 15px;
+  font-size:1.1rem;
+  padding:3%;
+  padding-left: 10%;
+  outline: none;
+  border:none;
+}
+.tick{
+  position: absolute;
+  top:3px;
+  right: -15px;
+  width:13%;
+}
+.picture-second{
+  /* border:1px solid black; */
+  /* padding-right:10%; */
+  width:80%;
+  height:60%;
+  display: flex;
+  justify-content: center;
+}
+.picture-second div:first-child{
+  overflow:hidden;
+  position: relative;
+  top:4px;
+}
+.picture-second div:last-child{
+  height:65%;
+  /* border:1px solid red; */
+  vertical-align: bottom;
+  position: relative;
+  top:74px;
+}
+.picture-second div{
+  width:41%;
+}
+.picture-second div img{
+  width:100%;
+}
+.picture-second div:last-child{
+  overflow: hidden;
+}
+.picture-second div:last-child{
+  position: relative;
+  left:6px;
+}
+.greet-two{
+  /* border:1px solid red; */
+  position: absolute;
+  bottom:10%;
+  left:2%;
+  /* left:0px; */
+  width:fit-content;
+}
+.greet-two input{
+  background-color: white;
+  border-radius: 15px;
+  font-size:1.1rem;
+  padding:3%;
+  padding-left: 10%;
+  border:none;
+}
+/* -------------Bike features------------- */
+.main-options{
+  display:flex;
+  justify-content:space-around;
+  flex-wrap: nowrap;
+  margin-top:4%;
+  margin-bottom: 8%;
+}
+.options{
+  width:15vw;
+  min-width: 15vw;
+  flex-wrap: nowrap;
+  border-radius: 10px;
+  box-shadow:0 0 5px 0.5px rgb(222, 220, 220);
+  /* border:1px solid black; */
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+.options div:first-child{
+  width:38%;
+  vertical-align: middle;
+  border-radius: 10px;
+  display: inline-block;
+}
+.options img{
+  width:100%;
+  border-radius: 10px;
+}
+.options div:last-child{
+  width:59%;
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  /* border:1px solid pink; */
+  font-family: sans-serif;
+  font-size:0.95rem;
+  color:rgb(14, 11, 11);
+  position: relative;
+  top:20px;
+}
+/* --------------Rental Fleet-------------- */
+.renting-heading{
+  text-align: center;
+  font-size:1.5rem;
+  font-weight: 700;
+  margin-bottom: 3%;
+  font-family: sans-serif;
+}
+.renting-options{
+  display: flex;
+  justify-content: right;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+.renting-vehicles{
+  display:flex;
+  width:40vw;
+  justify-content: space-between;
+  border-bottom:1px solid grey;
+  /* padding-bottom:0.6%; */
+  margin-right: 7%;
+}
+.bike{
+  padding-right: 2%;
+  padding-left: 2%;
+  border-bottom:4px solid cyan;
+}
+.renting-days{
+  margin-left:10%;
+  margin-right:5%;
+  border-bottom: 1px solid grey;
+  padding-bottom: 0.6%;
+}
+
+.vehicleDetailsSection{
+  display:flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: relative !important;
+}
+.vehicleCard{
+  width:17vw;
+  /* border:1px solid black; */
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 5px 1px grey;
+  height: 45vh;
+  font-family: sans-serif;
+  margin-top:4%;
+  margin-left:4%;
+  position: relative;
+}
+.vehicleImg{
+  text-align: center;
+}
+.vehicleDetails{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.vehicleDetails p:first-child{
+  color:red;
+  font-size:0.7rem;
+  font-weight: 700;
+}
+.vehicleDetails div{
+  display: flex;
+  justify-content: space-between;
+}
+.vehicleDetails div span:first-child{
+  font-size:0.9rem;
+  font-weight: 700;
+}
+.vehicleDetails div span:last-child{
+  font-size:1rem;
+  color:cyan;
+  font-weight: 700;
+}
+.vehicleDetails p:last-child{
+  font-size:0.8rem;
+  font-weight: 700;
+}
+.vehicleDetails p:last-child span{
+  font-size:0.7rem;
+  /* font-weight: 700; */
+  color:grey;
+}
+.hrline{
+  text-align: left;
+  width: 16%;
+}
+.vehicleDetails hr{
+  height:2px;
+  width:100%;
+  background-color: cyan;
+  color:cyan;
+  border:none;
+  margin-bottom: 0;
+}
+.bookButton{
+  text-align: center;
+}
+.bookButton button{
+  margin-top: 5%;
+  padding:3%;
+  padding-left:20%;
+  padding-right: 20%;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  color:black;
+  font-weight: 700;
+  background-color: cyan;
+  border:1px solid cyan;
+  border-radius: 16px;
+  /* margin-top:5%; */
+  /* margin-bottom: 7%; */
+}
+
+
+.showMore{
+  text-align: center;
+}
+.showMore button{
+  padding:0.6%;
+  font-family: sans-serif;
+  font-size: 1rem;
+  color:cyan;
+  font-weight: 700;
+  background-color: white;
+  border:1px solid cyan;
+  border-radius: 16px;
+  margin-top:5%;
+  margin-bottom: 7%;
+}
+
+
+/* -------------Testimonials------------- */
+.testimonials{
+  height:50vh;
+  width: 100%;
+  font-family: sans-serif;
+}
+.testimonials-heading{
+  text-align: center;
+  font-size:1.5rem;
+  font-weight: 700;
+  margin-bottom: 3%;
+}
+.testimonials-data{
+  display: flex;
+  justify-content: space-around;
+}
+.testimonial-main{
+  width:22%;
+  background-color: rgb(236, 230, 230);
+}
+.testimonial-user{
+  font-size: 1rem;
+  font-weight: 600;
+  /* border:1px solid black; */
+  padding-left:3%;
+}
+.testimonial-main p{
+  padding-left: 3%;
+}
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: center;
+  }
+  .main-options, .vehicleDetailsSection, .testimonials-data {
+      flex-direction: column;
+      align-items: center;
+  }
+  .header-left, .header-right {
+      min-width: 100%;
+  }
+}
