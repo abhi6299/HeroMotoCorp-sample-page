@@ -261,14 +261,13 @@ body{
 .main-options{
   display:flex;
   justify-content:space-around;
-  flex-wrap: nowrap;
   margin-top:4%;
   margin-bottom: 8%;
 }
 .options{
   width:15vw;
-  min-width: 15vw;
-  flex-wrap: nowrap;
+  /* min-width: 15vw; */
+  /* flex-wrap: nowrap; */
   border-radius: 10px;
   box-shadow:0 0 5px 0.5px rgb(222, 220, 220);
   /* border:1px solid black; */
@@ -468,16 +467,65 @@ body{
 .testimonial-main p{
   padding-left: 3%;
 }
-@media (max-width: 768px) {
-  .navbar {
+@media (max-width: 868px) {
+  /* .navbar {
       flex-direction: column;
       align-items: center;
-  }
-  .main-options, .vehicleDetailsSection, .testimonials-data {
+  } */
+  /* .main-options, .vehicleDetailsSection, .testimonials-data {
       flex-direction: column;
       align-items: center;
+  }*/
+  .header{
+    display:block;
+    /* margin:auto; */
+    text-align: center;
   }
-  .header-left, .header-right {
-      min-width: 100%;
+  .header-left{
+      width: 100%;
+      /* border:1px solid black; */
+      text-align: center;
+  }
+  .header-right{
+    width: 100%;
+    border:1px solid black;
+    margin-left: 10%;
+  }
+  .city-detail{
+    width: 100%;
+  }
+  .city-search{
+    width:100%;
+    text-align: center;
+  }
+  .countdown{
+    display: block;
+    text-align: left;
+    height:fit-content;
+  }
+  .countdown div:first-child{
+    display:block;
+  }
+  .contact{
+    display:flex;
+    margin:0;
+  }
+  .vehicleDetailsSection{
+    display: block;
+  }
+  .vehicleCard{
+    width:50vw;
+    text-align: center;
+    margin:auto;
+    margin-top:4%;
+  }
+  .testimonials-data{
+    display: block;
+    /* flex-wrap: nowrap; */
+  }
+  .testimonial-main{
+    width:fit-content;
+    text-align: center;
+    margin:auto;
   }
 }
